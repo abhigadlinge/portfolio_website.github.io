@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredericka+the+Great&family=Montserrat:ital,wght@0,300;1,200&display=swap');
+
+
+:root{
+  --red : #0170ca;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    overflow-x: hidden;
+    overflow: hidden;
+
+  }
+
+ html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; 
+    overflow-x: hidden;
+    scroll-padding-top: 8.5rem;
+  }
+
+
+  html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.842);
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: #393f3b;
+    border-radius: 5rem;
+  }
+
+  .main {
+    background-image: url(homeback.jpg);
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+   background-size: cover;
+  
+  }
+
+  .content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10rem;
+    color:#333;
+  }
+
+  span {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--red );
+  }
+
+
+  .content h3{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 4rem;
+    padding: .5rem;
+  }
+
+  .content a{
+    display: inline-block;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--red);
+  color:var(--red);
+  cursor: pointer;
+  font-size: 2.5rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #eee;
+  
+  z-index: 0;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 0rem;
+  }
+
+  .content a::before{
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width:0%;
+    height:100%;
+    background:var(--red);
+    transition: .3s linear;
+    z-index: -1;
+  }
+  
+  .content a:hover::before{
+    width:100%;
+    left: 0;
+  }
+  
+  .content a:hover{
+    color:#fff;
+  }
+
+  
+
+ .info{
+     position: absolute;
+     bottom: 8px;
+     left: 16px;
+     font-size: 1.5rem;
+     line-height: 3rem;
+     padding: 1rem;
+     color: white;
+ }
+
+ .info h2:hover{
+    color: var(--hovercolor);
+}
+
+  .left i{
+      padding: 1rem .5rem ;
+      font-size: 3rem;
+      color: white;
+    }
+    
+    
+   .left i:hover{
+      color: var(--hovercolor);
+    }
+
+    @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+    @media(max-width:991px){
+
+        html{
+          font-size: 50%;
+          padding: auto;
+        }
+       
+    }
+
+    @media(max-width:450px){
+
+        html{
+          font-size: 40%;
+         
+        }
+
+       body{
+        padding: 0rem;
+        margin: 0rem;
+       }
+    
+      
+     }
